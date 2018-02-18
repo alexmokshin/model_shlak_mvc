@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "EnterVoid";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="get" action="/Home/Index/" class="form-horizontal" style="margin-top: 30px">
+    <div class="form-group">
+        <label class="col-xs-2">
+            CaO/SiO2
+        </label>
+        <div class="col-xs-2">
+            <input type="text" name="OtnCaOSiO2" value="@(Math.Round(ViewBag.result.OtnCaOSiO2,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">
+            (CaO+MgO)/SiO2
+        </label>
+        <div class="col-xs-2">
+            <input type="text" name="OtnCaMgOnaSiO" value="@(Math.Round(ViewBag.result.OtnCaMgOnaSiO,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">
+            (CaO+MgO)/(SiO2+Al2O3)
+        </label>
+        <div class="col-xs-2">
+            <input type="text" name="OtnCaOMgOnaSiO2Al2O3" value="@(Math.Round(ViewBag.result.OtnCaOMgOnaSiO2Al2O3,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">
+            Вязкость при температуре 1350°С, градусы Цельсия
+        </label>
+        <div class="col-xs-2">
+            <input type="text" name="Viscosity1350" value="@(Math.Round(ViewBag.result.Viscosity1350,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Вязкость при температуре 1400°С, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="Viscosity1400" value="@(Math.Round(ViewBag.result.Viscosity1400,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Вязкость при температуре 1450°С, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="Viscosity1450" value="@(Math.Round(ViewBag.result.Viscosity1450,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Вязкость при температуре 1500°С, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="Viscosity1500" value="@(Math.Round(ViewBag.result.Viscosity1500,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Вязкость при температуре 1550°С, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="Viscosity1550" value="@(Math.Round(ViewBag.result.Viscosity1550,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Температура при вязкости 25 пуаз, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="TempVisc25puaz" value="@(Math.Round(ViewBag.result.TempVisc25puaz,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Температура при вязкости 7 пуаз, градусы Цельсия</label>
+        <div class="col-xs-2">
+            <input type="text" name="TempVisc7puaz" value="@(Math.Round(ViewBag.result.TempVisc7puaz,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Градиент вязкости 25-7 пуаз</label>
+        <div class="col-xs-2">
+            <input type="text" name="GradVisc7_25puaz" value="@(Math.Round(ViewBag.result.GradVisc7_25puaz,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Градиент вязкости 1400°С - 1500°С</label>
+        <div class="col-xs-2">
+            <input type="text" name="GradVisc1400_1500grad" value="@(Math.Round(ViewBag.result.GradVisc1400_1500grad,3))" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Вернуться на главную</button>
+    </div>
+</form>

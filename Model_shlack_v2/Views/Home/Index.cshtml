@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form method="post" action="/Home/EnterVoid/" class="form-horizontal" style="margin-top: 30px">
+    <div class="form-group">
+        <label class="col-xs-2">CaO, %</label>
+        <div class="col-xs-4">
+            <input type="text" name="CaO" value="@(ViewBag.index.CaO)" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">SiO2, %</label>
+        <div class="col-xs-4">
+            <input type="text" name="SiO2" value="@(ViewBag.index.SiO2)" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-2">Al2O3, %</label>
+        <div class="col-xs-4">
+            <input type="text" name="Al2O3" value="@(ViewBag.index.Al2O3)" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-2">MgO, %</label>
+        <div class="col-xs-4">
+            <input type="text" name="MgO" value="@(ViewBag.index.MgO)" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Посчитать</button>
+    </div>
+
+</form>
